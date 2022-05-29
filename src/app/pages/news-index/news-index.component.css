@@ -1,0 +1,50 @@
+#NewsList {
+    padding: 15px;
+    border : 1px solid black;
+}
+
+.title{
+    font-family: Helvetica;
+    font-size: 16px;
+    text-shadow: 1px 1px 0px #ccc;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+
+}
+
+.item-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    border : 1px solid black;
+    padding: 5px;
+    height: 100%;
+    margin-bottom: 15px;
+    cursor: pointer;
+
+}
+
+.description {
+    flex-grow: 4; 
+    flex-basis: 70%;
+    padding: 6px;
+}
+
+.description h4{
+    margin-bottom: 10px;
+}
+
+.image {
+    flex-grow: 1;
+    flex-basis: 20%;
+
+    text-align: center;
+}
+.img{
+    margin-left: auto;
+    max-height: 120px;
+}

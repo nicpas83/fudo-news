@@ -1,0 +1,24 @@
+<section id="NewsList" *ngIf="news">
+
+    <article *ngFor="let result of news">
+
+      <header class="title">
+        <h1>{{ result.title }}</h1>
+      </header>
+
+      <div class="item-info" (click)="openNews(result)">
+        <div class="description">
+          <h4>Autor: {{ result.author }}</h4>
+          <p><strong>Descripción: </strong> {{ result.description }} </p>
+        </div>
+
+        <div class="image">
+          <img [src]="result.urlToImage" class="img" />
+        </div>
+      </div>
+
+      <hr/>
+
+    </article>
+
+  </section>

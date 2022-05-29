@@ -1,0 +1,22 @@
+<article>
+
+    <header class="title">
+      <h1>{{ item.title }}</h1>
+    </header>
+
+    <div class="item-info" >
+      <div class="description">
+        <h4>Autor: {{ item.author }}</h4>
+        <p><strong>Descripción: </strong> {{ item.description }} </p>
+        <br/>
+        <p>{{ item.content }}</p>
+      </div>
+
+      <div class="image">
+        <img [src]="item.urlToImage" class="img" />
+      </div>
+    </div>
+
+    <hr/>
+
+  </article>
